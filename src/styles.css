@@ -18,18 +18,19 @@ code {
     monospace;
 }
 
-section {
-  display:flex;
+.weather-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-section .weather {
- border: 1px solid #ccc;
- flex: 1;
- padding:10px;
- text-align:center;
+.weather {
+  border: 1px solid gray;
+  padding: 5px;
+  max-width: 100px;
 }
 
-.weather span {
+p span {
   font-weight: bold;
 }
 

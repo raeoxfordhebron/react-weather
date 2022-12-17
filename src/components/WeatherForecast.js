@@ -5,8 +5,8 @@ function WeatherForecast({item, index}){
   return (<>
   <div className="weather" key={index}>
     <img src={item.img} alt={item.conditions}/>
-    <h2>{item.conditions}</h2>
-    <h3>{item.time}</h3>
+    <p><span>conditions:</span> {item.conditions}</p>
+    <p><span>time:</span> {item.time}</p>
     </div> 
   </>
     
