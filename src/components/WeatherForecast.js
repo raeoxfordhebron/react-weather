@@ -1,12 +1,13 @@
 import React from "react"
+import WeatherIcon from "./WeatherIcon"
+import WeatherData from "./WeatherData"
 
 
-function WeatherForecast({item, index}){
+function WeatherForecast(props){
   return (<>
-  <div className="weather" key={index}>
-    <img src={item.img} alt={item.conditions}/>
-    <p><span>conditions:</span> {item.conditions}</p>
-    <p><span>time:</span> {item.time}</p>
+  <div className="weather">
+    <WeatherIcon {...props}/>
+    <WeatherData {...props}/>
     </div> 
   </>
     

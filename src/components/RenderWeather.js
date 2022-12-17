@@ -4,8 +4,7 @@ import WeatherForecast from "./WeatherForecast"
 function RenderWeather(props){
     return (<>
         <div className="weather-container">
-        {props.data.map((item, index) => 
-            <WeatherForecast item={item} index={index}/>
+        {props.data.map((item, index) => <WeatherForecast item={item} index={index} key={index}/>
         )}
     </div>
     </>)
